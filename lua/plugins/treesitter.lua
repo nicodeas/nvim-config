@@ -30,6 +30,7 @@ return {
       "cpp",
       "c",
       "prisma",
+      "dockerfile",
     },
     incremental_selection = {
       enable = true,
