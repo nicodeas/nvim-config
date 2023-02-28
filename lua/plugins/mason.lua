@@ -5,6 +5,8 @@ return {
       "pyright",
       "prisma-language-server",
       "clangd",
+      "docker-compose-language-service",
+      "dockerfile-language-server",
     },
   },
 }
