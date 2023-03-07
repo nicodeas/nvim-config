@@ -2,7 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap
-map.set("i", "jk", "<Esc>")
+map.set({ "i", "v" }, "jk", "<Esc>")
 
 -- move highlighted text up and down
 map.set("v", "K", ":m '<-2<CR>gv=gv")
