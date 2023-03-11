@@ -15,3 +15,7 @@ map.set("n", "<C-u>", "<C-u>zz")
 -- cursor in the middle of the page during searching
 map.set("n", "n", "nzz")
 map.set("n", "N", "Nzz")
+
+-- Removing default mappings
+map.del("n", "<leader>ft")
+map.del("n", "<leader>fT")
