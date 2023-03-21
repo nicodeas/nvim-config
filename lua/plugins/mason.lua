@@ -7,6 +7,8 @@ return {
       "clangd",
       "docker-compose-language-service",
       "dockerfile-language-server",
+      "prettier",
+      "stylua",
     },
   },
 }
