@@ -9,7 +9,7 @@ return {
         nls.builtins.formatting.black,
         nls.builtins.diagnostics.flake8.with({ extra_args = { "--ignore=E501" } }),
         nls.builtins.formatting.stylua,
-        nls.builtins.formatting.prettier,
+        nls.builtins.formatting.prettierd,
       },
     }
   end,
