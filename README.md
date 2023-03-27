@@ -19,6 +19,14 @@ On installation, run `:checkhealth` to ensure that everything is working.
 
 - A Nerdfont, reccomend using MesloLGS NF
 
+## Path variables
+
+- Ensure Node has been installed and available in path, this is required even if you are not using node as it is possible that node is a sub dependency. You should do this by installing node with NVM. You may run into the problem where it is not in your path; this can be fixed by modifying your `.zshrc` or `.bashrc`.
+
+- run `yarn global add neovim`
+
+
+
 ## Possible errors
 
 To diagnose, run `:checkhealth`
