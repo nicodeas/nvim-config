@@ -16,6 +16,10 @@ map.set("n", "<C-u>", "<C-u>zz")
 map.set("n", "n", "nzz")
 map.set("n", "N", "Nzz")
 
+-- toggle git line blames
+-- add this to gitsigns plugin file in future
+map.set("n", "<leader>ub", ":Gitsigns toggle_current_line_blame<cr>")
+
 -- Removing default mappings
 map.del("n", "<leader>ft")
 map.del("n", "<leader>fT")
