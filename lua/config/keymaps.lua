@@ -19,3 +19,6 @@ map.set("n", "N", "Nzz")
 -- Removing default mappings
 map.del("n", "<leader>ft")
 map.del("n", "<leader>fT")
+
+-- delete this keymap while trying vim fugitive
+map.del("n", "<leader>gG")
