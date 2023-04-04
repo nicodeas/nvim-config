@@ -31,6 +31,7 @@ return {
       "c",
       "prisma",
       "dockerfile",
+      "java",
     },
     incremental_selection = {
       enable = true,

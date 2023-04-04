@@ -9,6 +9,7 @@ return {
       "dockerfile-language-server",
       "prettierd",
       "stylua",
+      "jdtls",
     },
   },
 }

@@ -10,6 +10,7 @@ return {
         nls.builtins.diagnostics.flake8.with({ extra_args = { "--ignore=E501,E203,W503,W504" } }),
         nls.builtins.formatting.stylua,
         nls.builtins.formatting.prettierd,
+        nls.builtins.formatting.google_java_format,
       },
     }
   end,
