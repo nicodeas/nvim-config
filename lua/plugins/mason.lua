@@ -10,6 +10,7 @@ return {
       "prettierd",
       "stylua",
       "jdtls",
+      "emmet-ls",
     },
   },
 }
