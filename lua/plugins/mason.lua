@@ -11,6 +11,7 @@ return {
       "stylua",
       "jdtls",
       "emmet-ls",
+      "tailwindcss-language-server",
     },
   },
 }
