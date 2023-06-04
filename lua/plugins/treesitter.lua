@@ -32,6 +32,7 @@ return {
       "prisma",
       "dockerfile",
       "java",
+      "vue",
     },
     incremental_selection = {
       enable = true,
