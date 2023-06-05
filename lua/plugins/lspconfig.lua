@@ -10,8 +10,9 @@ return {
           python = {
             analysis = {
               typeCheckingMode = "off",
-              -- autoSearchPaths = true,
-              -- useLibraryCodeFortypes = true,
+              diagnosticMode = "openFilesOnly",
+              autoSearchPaths = true,
+              useLibraryCodeFortypes = true,
             },
           },
         },
