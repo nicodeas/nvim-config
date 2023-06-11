@@ -1,7 +1,8 @@
 return {
   "akinsho/toggleterm.nvim",
   version = "*",
-  config = function()
+  config = true,
+  keys = function()
     local Terminal = require("toggleterm.terminal").Terminal
     local lazygit = Terminal:new({ cmd = "lazygit", hidden = true, direction = "float" })
     local localTerminal = Terminal:new({ hidden = true, direction = "float" })
@@ -13,8 +14,7 @@ return {
     function LocalTerminalToggle()
       localTerminal:toggle()
     end
-  end,
-  keys = function()
+
     return {
       {
         "<leader>t",
