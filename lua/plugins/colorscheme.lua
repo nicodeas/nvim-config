@@ -10,6 +10,7 @@ return {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
+    priority = 1000,
     opts = {
       integrations = {
         alpha = true,
@@ -40,12 +41,11 @@ return {
       },
     },
   },
-  { "sainnhe/everforest" },
   -- update colorscheme below
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "catppuccin-frappe",
     },
   },
 }
