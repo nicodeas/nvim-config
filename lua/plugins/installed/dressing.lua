@@ -1,4 +1,11 @@
 return {
   "stevearc/dressing.nvim",
-  event="VeryLazy",
+  event = "VeryLazy",
+  opts = {
+    input = {
+      win_options = {
+        winblend = 0,
+      },
+    },
+  },
 }
