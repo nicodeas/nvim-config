@@ -1,2 +1,2 @@
-require("nic.core")
-require("nic.lazy")
+require("core")
+require("plugins")
