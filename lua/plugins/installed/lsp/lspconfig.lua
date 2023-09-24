@@ -74,6 +74,36 @@ return {
     lspconfig["volar"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      init_options = {
+        typescript = {
+          tsdk = os.getenv("HOME")
+              .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/typescript/lib",
+        },
+        preferences = {
+          disableSuggestions = true,
+        },
+        languageFeatures = {
+          implementation = true,
+          references = true,
+          definition = true,
+          typeDefinition = true,
+          callHierarchy = true,
+          hover = true,
+          rename = true,
+          renameFileRefactoring = true,
+          signatureHelp = true,
+          codeAction = true,
+          workspaceSymbol = true,
+          diagnostics = true,
+          semanticTokens = true,
+          completion = {
+            defaultTagNameCase = "both",
+            defaultAttrNameCase = "kebabCase",
+            getDocumentNameCasesRequest = false,
+            getDocumentSelectionRequest = false,
+          },
+        },
+      },
     })
 
     lspconfig["emmet_ls"].setup({

@@ -21,7 +21,13 @@ return {
             group = augroup,
             buffer = bufnr,
             callback = function()
-              vim.lsp.buf.format()
+              vim.lsp.buf.format({
+                filter = function(current_client)
+                  --  only use null-ls for formatting instead of lsp server
+                  return current_client.name == "null-ls"
+                end,
+                bufnr = bufnr,
+              })
             end,
           })
         end
