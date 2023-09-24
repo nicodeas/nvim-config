@@ -11,7 +11,11 @@ return {
       "lua",
       "python",
       "vue",
+      "c",
+      "cpp",
     },
+    auto_install = true,
+    highlight = { enable = true },
     incremental_selection = {
       enable = true,
       keymaps = {
