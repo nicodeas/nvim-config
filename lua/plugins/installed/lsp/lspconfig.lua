@@ -4,6 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
+
     "mason.nvim",
     "jose-elias-alvarez/null-ls.nvim",
   },
@@ -69,12 +70,17 @@ return {
         },
       },
     })
-    --
+
     lspconfig["volar"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
+    lspconfig["emmet_ls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte", "vue" },
+    })
     -- python
     lspconfig["pyright"].setup({
       capabilities = capabilities,
