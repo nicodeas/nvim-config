@@ -1,4 +1,3 @@
-
 local map = vim.keymap
 map.set("i", "jk", "<Esc>")
 
@@ -15,11 +14,14 @@ map.set("n", "n", "nzz")
 map.set("n", "N", "Nzz")
 
 -- splits
-map.set("n","<leader>|",":vsplit<Cr>")
-map.set("n","<leader>-",":split<Cr>")
+map.set("n", "<leader>|", ":vsplit<Cr>")
+map.set("n", "<leader>-", ":split<Cr>")
 
 -- close window
-map.set("n","<leader>wd",":close<Cr>")
+map.set("n", "<leader>wd", ":close<Cr>")
+
+-- clear highlights from search with <Esc>
+map.set("n", "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear highlights from search" })
 
 -- exit vim
-map.set("n","<leader>qq",":qa<Cr>")
+map.set("n", "<leader>qq", ":qa<Cr>")
