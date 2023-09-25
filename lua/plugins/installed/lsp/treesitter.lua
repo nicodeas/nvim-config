@@ -4,7 +4,7 @@ return {
   event = { "BufReadPost", "BufNewFile" },
   keys = {
     { "<C-space>", desc = "Increment selection" },
-    { "<bs>",      desc = "Schrink selection",  mode = "x" },
+    { "<bs>", desc = "Schrink selection", mode = "x" },
   },
   opts = {
     ensure_installed = {
@@ -13,6 +13,9 @@ return {
       "vue",
       "c",
       "cpp",
+      "typescript",
+      "javascript",
+      "dockerfile",
     },
     auto_install = true,
     highlight = { enable = true },
