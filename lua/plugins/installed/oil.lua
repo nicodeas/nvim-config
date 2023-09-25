@@ -1,10 +1,22 @@
 return {
-  "stevearc/oil.nvim",
-  opts = {},
-  config = function(_, opts)
-    require("oil").setup(opts)
-    local keymap = vim.keymap
-    keymap.set("n", "<leader>e", "<Cmd>Oil<Cr>", { desc = "Toggle File Explorer" })
-  end,
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  -- "stevearc/oil.nvim",
+  -- opts = {
+  --   keymaps = {
+  --     ["g?"] = "actions.show_help",
+  --     ["<CR>"] = "actions.select",
+  --     ["<S-p>"] = "actions.preview",
+  --     ["q"] = "actions.close",
+  --     ["<BS>"] = "actions.parent",
+  --     ["_"] = "actions.open_cwd",
+  --     ["gs"] = "actions.change_sort",
+  --     ["g."] = "actions.toggle_hidden",
+  --   },
+  --   use_default_keymaps = false,
+  -- },
+  -- config = function(_, opts)
+  --   require("oil").setup(opts)
+  --   local keymap = vim.keymap
+  --   keymap.set("n", "<leader>e", "<Cmd>Oil<Cr>", { desc = "Toggle File Explorer" })
+  -- end,
+  -- dependencies = { "nvim-tree/nvim-web-devicons" },
 }
