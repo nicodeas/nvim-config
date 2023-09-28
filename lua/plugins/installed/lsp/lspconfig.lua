@@ -77,7 +77,7 @@ return {
       init_options = {
         typescript = {
           tsdk = os.getenv("HOME")
-              .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/typescript/lib",
+            .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/typescript/lib",
         },
         preferences = {
           disableSuggestions = true,
