@@ -76,6 +76,8 @@ return {
     })
     mason_lspconfig.setup_handlers({
       function(server_name)
+        -- NOTE: only the keys settings and filetypes have been configured
+        -- will need to add keys to this if there are more keys to setting up LSPs
         require("lspconfig")[server_name].setup({
           capabilities = capabilities,
           on_attach = on_attach,
