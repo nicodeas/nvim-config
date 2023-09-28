@@ -16,6 +16,7 @@ return {
       "typescript",
       "javascript",
       "dockerfile",
+      "css",
     },
     auto_install = true,
     highlight = { enable = true },
