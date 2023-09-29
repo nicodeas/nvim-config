@@ -1,7 +1,4 @@
-# 💤 LazyVim
-
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+# Neovim Config Files
 
 On installation, run `:checkhealth` to ensure that everything is working.
 
@@ -12,6 +9,8 @@ On installation, run `:checkhealth` to ensure that everything is working.
 - Install xclip if no clip board found
 
 - For Telescope's fuzzy finding, [Ripgrep](https://github.com/BurntSushi/ripgrep).
+
+- For better Telescpe performance, use native [fzf](https://github.com/junegunn/fzf)
 
 - For built in git UI, [lazygit](https://github.com/jesseduffield/lazygit).
 
