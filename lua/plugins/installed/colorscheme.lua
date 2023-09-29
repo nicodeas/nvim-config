@@ -1,14 +1,24 @@
-return{
-    "catppuccin/nvim",
-    priority=1000,
-    name="catppuccin",
-    config=function()
-      vim.cmd([[colorscheme catppuccin-frappe]])
+return {
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000,
+    name = "kanagawa",
+    config = function()
+      vim.cmd("colorscheme kanagawa")
     end,
-    opts = {
-      integrations={
-        cmp=true,
-        nvimtree=true
-      }
-    }
+  },
+  -- {
+  --     "catppuccin/nvim",
+  --     priority=1000,
+  --     name="catppuccin",
+  --     config=function()
+  --       vim.cmd([[colorscheme catppuccin-frappe]])
+  --     end,
+  --     opts = {
+  --       integrations={
+  --         cmp=true,
+  --         nvimtree=true
+  --       }
+  --     }
+  -- }
 }
