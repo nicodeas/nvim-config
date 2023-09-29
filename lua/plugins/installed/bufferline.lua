@@ -1,25 +1,31 @@
 return {
   "akinsho/bufferline.nvim",
-  event="VeryLazy",
+  event = "VeryLazy",
 
-  dependencies = {"nvim-tree/nvim-web-devicons","famiu/bufdelete.nvim"},
-  version="*",
+  dependencies = { "nvim-tree/nvim-web-devicons", "famiu/bufdelete.nvim" },
+  version = "*",
   opts = {
-    options={
-      separator_style="thick",
+    options = {
+      separator_style = "thick",
       offsets = {
         {
-          filetype="NvimTree",
+          filetype = "NvimTree",
           text = "Explorer",
           text_align = "left",
-          separator = true
+          separator = true,
         },
       },
     },
   },
   keys = {
-    {"L","<Cmd>BufferLineCycleNext<CR>",desc="Next buffer"},
-    {"H","<Cmd>BufferLineCyclePrev<CR>",desc="Previous buffer"},
-    {"<leader>bd",function(bufnr) require('bufdelete').bufdelete(bufnr)end,desc="Delete current buffer"}
-  }
+    { "L", "<Cmd>BufferLineCycleNext<CR>", desc = "Next buffer" },
+    { "H", "<Cmd>BufferLineCyclePrev<CR>", desc = "Previous buffer" },
+    {
+      "<leader>bd",
+      function(bufnr)
+        require("bufdelete").bufdelete(bufnr)
+      end,
+      desc = "Delete current buffer",
+    },
+  },
 }
