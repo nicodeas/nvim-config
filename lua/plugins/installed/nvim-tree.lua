@@ -11,7 +11,6 @@ return {
     nvimtree.setup({
       view = {
         width = 35,
-        relativenumber = true,
       },
       actions = {
         open_file = {
