@@ -17,7 +17,8 @@ local on_attach = function(_, bufnr)
 
   -- See `:help K` for why this keymap
   nmap("K", vim.lsp.buf.hover, "Hover Documentation")
-  nmap("<C-k>", vim.lsp.buf.signature_help, "Signature Documentation")
+
+  nmap("J", vim.lsp.buf.signature_help, "Signature Documentation")
 
   nmap("<leader>rs", ":LspRestart<Cr>", "[R]e[S]tart")
 
