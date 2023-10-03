@@ -31,8 +31,9 @@ return {
         return "<Ignore>"
       end, { expr = true })
       -- keymaps
-      map("n", "<leader>hs", gs.stage_hunk)
-      map("n", "<leader>hr", gs.reset_hunk)
+      map("n", "<leader>hs", gs.stage_hunk, { desc = "[H]unk [S]tage" })
+      map("n", "<leader>hr", gs.reset_hunk, { desc = "[H]unk [R]eset" })
+      map("n", "<leader>bl", gs.blame_line, { desc = "[B]lame [L]ine" })
     end,
   },
 }
