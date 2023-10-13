@@ -2,6 +2,9 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   event = { "BufReadPost", "BufNewFile" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+  },
   keys = {
     { "<C-space>", desc = "Increment selection" },
     { "<bs>", desc = "Schrink selection", mode = "x" },
