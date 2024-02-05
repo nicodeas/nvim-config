@@ -1,12 +1,15 @@
 return {
   {
     "rebelot/kanagawa.nvim",
-    priority = 1000,
     name = "kanagawa",
+    priority = 1000,
     config = function()
       vim.cmd("colorscheme kanagawa")
     end,
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  { "EdenEast/nightfox.nvim" },
+  { "bluz71/vim-nightfly-colors", name = "nightfly" },
   -- {
   --     "catppuccin/nvim",
   --     priority=1000,
