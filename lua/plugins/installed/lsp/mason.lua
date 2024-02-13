@@ -5,6 +5,7 @@ return {
     ensure_installed = {
       "prettierd",
       "stylua",
+      "shfmt",
     },
     automatic_installation = true,
   },

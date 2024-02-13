@@ -20,6 +20,7 @@ return {
       "javascript",
       "dockerfile",
       "css",
+      "bash",
     },
     auto_install = true,
     highlight = { enable = true },
