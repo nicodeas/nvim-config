@@ -22,6 +22,10 @@ return {
           FloatTitle = { bg = "none" },
           NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
 
+          -- lazy background
+          LazyNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+          -- mason background
+          MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
           -- telescope settings
           TelescopeTitle = { fg = theme.ui.special, bold = true },
           TelescopePromptNormal = { bg = theme.ui.bg_p1 },
@@ -43,9 +47,9 @@ return {
       vim.cmd("colorscheme kanagawa")
     end,
   },
-  { "rose-pine/neovim", name = "rose-pine" },
-  { "EdenEast/nightfox.nvim" },
-  { "bluz71/vim-nightfly-colors", name = "nightfly" },
+  -- { "rose-pine/neovim", name = "rose-pine" },
+  -- { "EdenEast/nightfox.nvim" },
+  -- { "bluz71/vim-nightfly-colors", name = "nightfly" },
   -- {
   --     "catppuccin/nvim",
   --     priority=1000,
