@@ -21,6 +21,7 @@ return {
       "dockerfile",
       "css",
       "bash",
+      "rust",
     },
     auto_install = true,
     highlight = { enable = true },
