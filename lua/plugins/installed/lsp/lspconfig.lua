@@ -67,6 +67,7 @@ return {
     { "antosha417/nvim-lsp-file-operations", config = true },
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig",
+    { "j-hui/fidget.nvim", opts = {} },
   },
   config = function()
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
