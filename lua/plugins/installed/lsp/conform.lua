@@ -8,6 +8,11 @@ return {
       python = { "black" },
       javascript = { "prettierd" },
       typescript = { "prettierd" },
+      typescriptreact = { "prettierd" },
+      javascriptreact = { "prettierd" },
+      svelte = { "prettier" },
+      json = { "prettier" },
+      yaml = { "prettier" },
     },
     format_on_save = {
       timeout_ms = 500,
