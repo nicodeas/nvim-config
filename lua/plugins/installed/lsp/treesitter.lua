@@ -22,6 +22,7 @@ return {
       "css",
       "bash",
       "rust",
+      "go",
     },
     auto_install = true,
     highlight = { enable = true },
