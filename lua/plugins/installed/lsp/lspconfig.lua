@@ -70,6 +70,15 @@ return {
     "williamboman/mason-lspconfig",
     { "j-hui/fidget.nvim", opts = {} },
   },
+  keys = {
+    {
+      "<leader>il",
+      function()
+        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+      end,
+      desc = "Enable inlay hints",
+    },
+  },
   config = function()
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
     local mason_lspconfig = require("mason-lspconfig")
