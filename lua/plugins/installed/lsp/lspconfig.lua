@@ -57,6 +57,7 @@ local servers = {
   dockerls = {},
   tailwindcss = {},
   bashls = {},
+  gopls = {},
 }
 
 return {
