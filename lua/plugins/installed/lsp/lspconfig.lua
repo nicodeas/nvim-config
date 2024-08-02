@@ -58,6 +58,7 @@ local servers = {
   tailwindcss = {},
   bashls = {},
   gopls = {},
+  marksman = {},
 }
 
 return {
