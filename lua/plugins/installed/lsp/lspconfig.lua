@@ -51,7 +51,6 @@ local servers = {
     },
   },
   volar = {},
-  tsserver = {},
   emmet_ls = {},
   clangd = {},
   dockerls = {},
