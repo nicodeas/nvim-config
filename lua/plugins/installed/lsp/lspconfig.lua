@@ -83,8 +83,14 @@ return {
     local mason_lspconfig = require("mason-lspconfig")
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+
+    -- NOTE: i'm not sure if this is the best way to do this, but i needed to set a version for volar, latest version does not work properly
+    -- and @ is not a valid character as a table key.
+    -- could have also just called table.insert(server,"volar@1.8.27") instead
+    local ensure_installed = vim.tbl_keys(servers)
+    table.insert(ensure_installed, "volar@1.8.27")
     mason_lspconfig.setup({
-      ensure_installed = vim.tbl_keys(servers),
+      ensure_installed = ensure_installed,
     })
     mason_lspconfig.setup_handlers({
       function(server_name)
